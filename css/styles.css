@@ -248,7 +248,8 @@ img {
   margin-bottom: 0;
 }
 
-.examples-title {
+.examples-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -314,6 +315,31 @@ img {
   padding-bottom: 30px;
 }
 
+.team-contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-item + .team-item {
+  margin-left: 10px;
+}
+
+.team-contacts .team-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.team-contacts .team-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
 .buttons-list {
   display: flex;
   justify-content: center;
@@ -376,6 +402,39 @@ img {
   height: 294px;
 }
 
+/* ------------------Секция Клиенты--------------- */
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clients-list .item {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-list .link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.clients-list .item:hover,
+.clients-list .link:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* Заголовки */
 .title {
   color: var(--title-text-color);
@@ -385,7 +444,8 @@ img {
   line-height: 1.17;
 }
 .examples-title,
-.team-title {
+.team-title,
+.clients-title {
   text-align: center;
 }
 
