@@ -41,6 +41,7 @@ body {
 
 /* Убираем подчёркивания и точки списка, задаём глобальные значения классов */
 .link {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -125,6 +126,7 @@ img {
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: var(--primary-text-color);
   color: var(--primary-text-color);
   align-items: center;
 }
@@ -515,7 +517,7 @@ img {
 
 /* Логотип в футере*/
 .footer-logo {
-  display: block;
+  display: inline-block;
 
   color: var(--primary-white-color);
 
@@ -552,4 +554,55 @@ img {
 .address-nav .item + .item {
   margin-top: 9px;
   margin-bottom: 0;
+}
+
+/* Присоединяйтесь в соц сетях */
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-us {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.join-us-title {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.join-us .footer-contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer-item + .footer-item {
+  margin-left: 10px;
+}
+
+.footer-contacts .social-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
