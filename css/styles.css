@@ -315,6 +315,7 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primary-white-color);
 }
 
 .team-contacts {
@@ -337,7 +338,8 @@ img {
   fill: #afb1b8;
 }
 
-.team-contacts .team-link:hover {
+.team-contacts .team-link:hover,
+.team-contacts .team-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -434,7 +436,9 @@ img {
 }
 
 .clients-list .item:hover,
-.clients-list .link:hover {
+.clients-list .link:hover,
+.clients-list .item:focus,
+.clients-list .link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -599,7 +603,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
